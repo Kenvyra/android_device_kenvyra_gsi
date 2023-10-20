@@ -1,4 +1,4 @@
-DEVICE_PATH := device/lineage/gsi
+DEVICE_PATH := device/kenvyra/gsi
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include

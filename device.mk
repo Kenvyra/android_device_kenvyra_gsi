@@ -1,4 +1,4 @@
-DEVICE_PATH := device/lineage/gsi
+DEVICE_PATH := device/kenvyra/gsi
 
 # Bluetooth Audio (System-side HAL, sysbta)
 PRODUCT_PACKAGES += \
@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-kenvyra
 
 # QCOM in-call audio fix from PHH
 PRODUCT_PACKAGES += \
@@ -37,3 +37,6 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # Two-pane layout in Settings
 PRODUCT_PACKAGES += \
     androidx.window.extensions
+
+# 1080p works for most devices
+TARGET_BOOT_ANIMATION_RES := 1080
